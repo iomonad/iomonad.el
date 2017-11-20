@@ -10,3 +10,7 @@
 # Undo-tree save-files
 *.~undo-tree
 auto-save-list
+elpa
+network-security.data
+packages
+#*#

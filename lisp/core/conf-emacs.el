@@ -30,10 +30,24 @@
       auto-save-list-file-prefix nil
       auto-save-default nil)
 
-;; Nope.
 (menu-bar-mode 0)
 
-;; Display custom message in scratch buffer
+(setq custom-file "~/.emacs.d/.custom.el")
+(load custom-file)
+
+
+(add-to-list 'custom-theme-load-path
+             (concat user-emacs-directory "themes/"))
+
+(when window-system
+  (setq-default line-spacing 2)
+  (set-face-font 'default "Source Code Pro-11")
+  (set-face-font 'variable-pitch "Lucida Grande-11")
+  (set-face-font 'fixed-pitch "Source Code Pro-11"))
+
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+
 (setq initial-scratch-message ";;_
 ;;                 __         _,******
 ;;   ,-----,        _  _,**

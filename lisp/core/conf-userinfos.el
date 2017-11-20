@@ -8,4 +8,4 @@
 (defvar *emacs-config-directory* "~/.emacs.d")
 (defvar *linux-distro* "gentoo")
 
-(provide 'conf-userinfo)
+(provide 'conf-userinfos)

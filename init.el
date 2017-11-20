@@ -3,38 +3,40 @@
 ;; https://github.com/iomonad/iomonad.el
 ;;
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (defvar *config-dir*
-  "Set global config path folder to load"
   (expand-file-name (convert-standard-filename "lisp")
 		    user-emacs-directory))
 
 (defvar *cfg-core*
-  "Subfolder config path that contains core
-   configurations"
   (concat (file-name-as-directory *config-dir*)
 	  "core"))
 (defvar *cfg-pkg*
-  "Subfolder config path that contains package
-   configurations"
   (concat (file-name-as-directory *config-dir*)
 	  "package"))
 (defvar *cfg-langs*
-  "Subfolder config path that contains langages
-   related config files"
   (concat (file-name-as-directory *config-dir*)
 	  "languages"))
 (defvar *cfg-exp*
-  "Playground folder where some features can breaks."
   (concat (file-name-as-directory *config-dir*)
 	  "experimental"))
 
 (defvar *defun-dir*
-  "Custom declared functions or tricks are stored here"
   (expand-file-name (convert-standard-filename "defun")
 		    user-emacs-directory))
 (defvar *plugins-dir*
-  "One file external plugins stored here are  loaded
-   at emacs's boot"
   (expand-file-name (convert-standard-filename "plugins")
 		    user-emacs-directory))
 
@@ -50,16 +52,11 @@
 		   (directory-files config-folders t "\\.el")))
     (message "Directory \"%s\" niet gevonden. Geen extensies zijn geladen." config-folders)))
 
-
-(defun boot ()
-  "Entry point hook"
-  (mapc (lambda (x)
-	  (load-config-folders x))
-	(list *cfg-core*
-	      *cfg-pkg*
-	      *cfg-langs*
-	      *cfg-exp*
-	      *defun-dir*
-	      *plugins-dir*)))
-;(boot)
-(load-config-folders *cfg-core*)
+(mapc (lambda (x)
+	(load-config-folders x))
+      (list *cfg-core*
+	    *cfg-pkg*
+	    *cfg-langs*
+	    *cfg-exp*
+	    *defun-dir*
+	    *plugins-dir*))
