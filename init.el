@@ -39,7 +39,8 @@
 					user-emacs-directory))
 
 (defun load-config-folders (config-folders)
-  "For each folder in emacs's path, loading"
+  "For each folder in emacs's path, load
+   configuration file and show a load message"
   (if (file-exists-p config-folders)
 	  (progn (add-to-list 'load-path config-folders)
 			 (mapc (lambda (fname)
@@ -48,3 +49,16 @@
 					   (require feat fname)))
 				   (directory-files config-folders t "\\.el")))
 	(message "Directory \"%s\" niet gevonden. Geen extensies zijn geladen." config-folders)))
+
+
+(defun boot ()
+  "Entry point hook"
+  (mapc (lambda (x)
+		  (load-config-folders x))
+		'(*cfg-core*
+		  *cfg-pkg*
+		  *cfg-langs*
+		  *cfg-exp*
+		  *defun-dir*
+		  *plugins-dir*)))
+(boot)
