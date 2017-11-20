@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; File:     ~/.emacs.d/emacs-init.el
 ;; Author:   iomonad <me@trosa.io>
 ;; https://github.com/iomonad/iomonad.el
@@ -36,7 +37,7 @@
   "One file external plugins stored here are  loaded
    at emacs's boot"
   (expand-file-name (convert-standard-filename "plugins")
-					user-emacs-directory))
+		    user-emacs-directory))
 
 (defun load-config-folders (config-folders)
   "For each folder in emacs's path, load
@@ -54,12 +55,11 @@
 (defun boot ()
   "Entry point hook"
   (mapc (lambda (x)
-		  (load-config-folders x))
-		'(*cfg-core*
-		  *cfg-pkg*
-		  *cfg-langs*
-		  *cfg-exp*
-		  *defun-dir*
-		  *plugins-dir*)))
-
-(load-config-folders *cfg-core*)
+	  (load-config-folders x))
+	(list *cfg-core*
+	      *cfg-pkg*
+	      *cfg-langs*
+	      *cfg-exp*
+	      *defun-dir*
+	      *plugins-dir*)))
+(boot)
