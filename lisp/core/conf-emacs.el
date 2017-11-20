@@ -47,6 +47,7 @@
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
+(setq linum-relative-current-symbol "")
 
 (setq initial-scratch-message ";;_
 ;;                 __         _,******
