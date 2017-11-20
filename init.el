@@ -61,4 +61,5 @@
 		  *cfg-exp*
 		  *defun-dir*
 		  *plugins-dir*)))
-(boot)
+
+(load-config-folders *cfg-core*)
