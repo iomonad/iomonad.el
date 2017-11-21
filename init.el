@@ -26,6 +26,9 @@
 (defvar *cfg-pkg*
   (concat (file-name-as-directory *config-dir*)
 	  "package"))
+(defvar *cfg-libs*
+  (concat (file-name-as-directory *config-dir*)
+	  "libs"))
 (defvar *cfg-langs*
   (concat (file-name-as-directory *config-dir*)
 	  "languages"))
@@ -56,6 +59,7 @@
 	(load-config-folders x))
       (list *cfg-core*
 	    *cfg-pkg*
+	    *cfg-libs*
 	    *cfg-langs*
 	    *cfg-exp*
 	    *defun-dir*
