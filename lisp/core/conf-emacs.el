@@ -30,11 +30,12 @@
       auto-save-list-file-prefix nil
       auto-save-default nil)
 
-(menu-bar-mode 0)
+(menu-bar-mode -1)
 (set-language-environment "UTF-8")
 (setq custom-file "~/.emacs.d/.custom.el")
 (load custom-file)
 
+;; Theming
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'sourcerer t)
 
@@ -44,9 +45,11 @@
   (set-face-font 'variable-pitch "Lucida Grande-11")
   (set-face-font 'fixed-pitch "Source Code Pro-11"))
 
-;(tool-bar-mode 0)
-;scroll-bar-mode 0)
-(setq linum-relative-current-symbol "")
+(when (display-graphic-p)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1))
+(set-face-attribute 'vertical-border nil :foreground (face-attribute 'fringe :background))
+
 (setq initial-scratch-message ";;_
 ;;                 __         _,******
 ;;   ,-----,        _  _,**
@@ -60,11 +63,55 @@
 ;;                 ''     ''
 ")
 
+;; Switch between systems
 (if (eq system-type 'darwin)
     (display-time-mode t))
 
 (if (eq system-type 'gnu/linux)
     (setq ring-bell-function 'ignore))
 
+;; scrolling
+(setq scroll-step            1
+      scroll-conservatively  10000)
+
+;; Trailling
+(require 'whitespace)
+(setq-default show-trailing-whitespace t)
+(add-hook 'minibuffer-setup-hook
+          'no-trailing-whitespace)
+(add-hook 'eww-mode-hook
+          'no-trailing-whitespace)
+(add-hook 'ielm-mode-hook
+          'no-trailing-whitespace)
+(add-hook 'gdb-mode-hook
+          'no-trailing-whitespace)
+(add-hook 'help-mode-hook
+          'no-trailing-whitespace)
+;; line num
+(require 'linum)
+(set-face-attribute 'linum nil
+                    :background (face-attribute 'default :background)
+                    :foreground (face-attribute 'font-lock-comment-face :foreground))
+(defface linum-current-line-face
+  `((t :background "gray30" :foreground "white"))
+  "Face for the currently active Line number")
+(defvar my-linum-current-line-number 0)
+(defun get-linum-format-string ()
+  (setq-local my-linum-format-string
+              (let ((w (length (number-to-string
+                                (count-lines (point-min) (point-max))))))
+                (concat " %" (number-to-string w) "d "))))
+(add-hook 'linum-before-numbering-hook 'get-linum-format-string)
+(defun my-linum-format (line-number)
+  (propertize (format my-linum-format-string line-number) 'face
+              (if (eq line-number my-linum-current-line-number)
+                  'linum-current-line-face
+                'linum)))
+(setq linum-format 'my-linum-format)
+(defadvice linum-update (around my-linum-update)
+  (let ((my-linum-current-line-number (line-number-at-pos)))
+    ad-do-it))
+(ad-activate 'linum-update)
+(global-linum-mode)
 
 (provide 'conf-emacs)
