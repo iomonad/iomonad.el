@@ -13,11 +13,15 @@
 ;; leader ftw
 (evil-leader/set-leader ",")
 (evil-leader/set-key
-  "b" 'switch-to-buffer
-  "w" 'save-buffer
-  "k" 'kill-buffer
-  "g" 'keyboard-escape-quit
-  "x" 'save-buffers-kill-emacs
-  "e" 'find-file)
+  "b"  'switch-to-buffer
+  "w"  'save-buffer
+  "k"  'kill-buffer
+  "t"  'neotree-toggle
+  "u"  'undo
+  "r"  'redo
+  "v"  'undo-tree-visualize
+  "g"  'keyboard-escape-quit
+  "x"  'save-buffers-kill-emacs
+  "e"  'find-file)
 
 (provide 'pkg-evil)
