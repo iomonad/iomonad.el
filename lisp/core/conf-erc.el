@@ -6,7 +6,7 @@
 (require 'conf-userinfos)
 
 (setq erc-log-channels-directory
-      (concat user-emacs-directory  "~/.erc/logs/"))
+      (concat user-emacs-directory  ".erc/logs/"))
 
 (setq erc-save-buffer-on-part t)
 (setq erc-log-insert-log-on-open t)
