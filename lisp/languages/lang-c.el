@@ -31,5 +31,5 @@
 			   (indent-tabs-mode . t)))
 
 (global-set-key (kbd "TAB") 'self-insert-command)
-
+(setq-default tab-always-indent 'complete)
 (provide 'lang-c)

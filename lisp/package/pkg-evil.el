@@ -3,6 +3,8 @@
   :ensure t)
 (use-package evil-leader
   :ensure t)
+(use-package evil-nerd-commenter
+  :ensure t)
 
 (require 'evil)
 (require 'evil-leader)
@@ -27,5 +29,17 @@
   "p"  'split-window-horizontally
   "|"  'toggle-window-split
   "e"  'find-file)
+
+;; Lead for evil
+(evil-leader/set-key
+  "ci" 'evilnc-comment-or-uncomment-lines
+  "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
+  "ll" 'evilnc-quick-comment-or-uncomment-to-the-line
+  "cc" 'evilnc-copy-and-comment-lines
+  "cp" 'evilnc-comment-or-uncomment-paragraphs
+  "cr" 'comment-or-uncomment-region
+  "cv" 'evilnc-toggle-invert-comment-line-by-line
+  "."  'evilnc-copy-and-comment-operator
+  "\\" 'evilnc-comment-operator)
 
 (provide 'pkg-evil)
