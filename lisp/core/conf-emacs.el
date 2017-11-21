@@ -31,13 +31,12 @@
       auto-save-default nil)
 
 (menu-bar-mode 0)
-
+(set-language-environment "UTF-8")
 (setq custom-file "~/.emacs.d/.custom.el")
 (load custom-file)
 
-
-(add-to-list 'custom-theme-load-path
-             (concat user-emacs-directory "themes/"))
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'sourcerer t)
 
 (when window-system
   (setq-default line-spacing 2)
@@ -45,10 +44,9 @@
   (set-face-font 'variable-pitch "Lucida Grande-11")
   (set-face-font 'fixed-pitch "Source Code Pro-11"))
 
-(tool-bar-mode 0)
-(scroll-bar-mode 0)
+;(tool-bar-mode 0)
+;scroll-bar-mode 0)
 (setq linum-relative-current-symbol "")
-
 (setq initial-scratch-message ";;_
 ;;                 __         _,******
 ;;   ,-----,        _  _,**
@@ -61,5 +59,12 @@
 ;; __.-''*-,.,____||_____||___,_.-
 ;;                 ''     ''
 ")
+
+(if (eq system-type 'darwin)
+    (display-time-mode t))
+
+(if (eq system-type 'gnu/linux)
+    (setq ring-bell-function 'ignore))
+
 
 (provide 'conf-emacs)
