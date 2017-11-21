@@ -21,6 +21,7 @@
   "t"  'neotree-toggle
   "u"  'undo
   "r"  'redo
+  "`"  'header-insert
   "s"  'magit-status
   "v"  'undo-tree-visualize
   "g"  'keyboard-escape-quit

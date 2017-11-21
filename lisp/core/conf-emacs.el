@@ -124,4 +124,7 @@
 		;; line #
 		"line %l, %p")))
 
+;; Closes that parenthese
+(electric-pair-mode 1)
+
 (provide 'conf-emacs)
