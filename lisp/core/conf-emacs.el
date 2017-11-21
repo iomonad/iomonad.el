@@ -74,44 +74,54 @@
 (setq scroll-step            1
       scroll-conservatively  10000)
 
-;; Trailling
-(require 'whitespace)
-(setq-default show-trailing-whitespace t)
-(add-hook 'minibuffer-setup-hook
-          'no-trailing-whitespace)
-(add-hook 'eww-mode-hook
-          'no-trailing-whitespace)
-(add-hook 'ielm-mode-hook
-          'no-trailing-whitespace)
-(add-hook 'gdb-mode-hook
-          'no-trailing-whitespace)
-(add-hook 'help-mode-hook
-          'no-trailing-whitespace)
 ;; line num
 (require 'linum)
 (set-face-attribute 'linum nil
-                    :background (face-attribute 'default :background)
-                    :foreground (face-attribute 'font-lock-comment-face :foreground))
+		    :background (face-attribute 'default :background)
+		    :foreground (face-attribute 'font-lock-comment-face :foreground))
 (defface linum-current-line-face
   `((t :background "gray30" :foreground "white"))
   "Face for the currently active Line number")
 (defvar my-linum-current-line-number 0)
 (defun get-linum-format-string ()
   (setq-local my-linum-format-string
-              (let ((w (length (number-to-string
-                                (count-lines (point-min) (point-max))))))
-                (concat " %" (number-to-string w) "d "))))
+	      (let ((w (length (number-to-string
+				(count-lines (point-min) (point-max))))))
+		(concat " %" (number-to-string w) "d "))))
 (add-hook 'linum-before-numbering-hook 'get-linum-format-string)
 (defun my-linum-format (line-number)
   (propertize (format my-linum-format-string line-number) 'face
-              (if (eq line-number my-linum-current-line-number)
-                  'linum-current-line-face
-                'linum)))
+	      (if (eq line-number my-linum-current-line-number)
+		  'linum-current-line-face
+		'linum)))
 (setq linum-format 'my-linum-format)
 (defadvice linum-update (around my-linum-update)
   (let ((my-linum-current-line-number (line-number-at-pos)))
     ad-do-it))
 (ad-activate 'linum-update)
 (global-linum-mode)
+
+;; Powerline
+(setq-default mode-line-format
+	      (quote
+	       (" "
+		;; mode string
+		(:propertize global-mode-string face 'mode-line-mode-string)
+
+		;; file path
+		(:propertize (:eval (if (> (length default-directory) 17)
+					(concat "..." (substring default-directory -20))
+				      default-directory))
+			     face 'mode-line-folder-face)
+
+		;; file name
+		(:propertize mode-line-buffer-identification face 'mode-line-buffer-name)
+		(:propertize mode-line-modified face 'mode-line-modified-face)
+		"  "
+		;; value of 'mode-name'
+		(:propertize "%m" face 'mode-line-mode-name)
+		" :: "
+		;; line #
+		"line %l, %p")))
 
 (provide 'conf-emacs)

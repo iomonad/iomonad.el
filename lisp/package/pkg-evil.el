@@ -16,6 +16,7 @@
   "b" 'switch-to-buffer
   "w" 'save-buffer
   "k" 'kill-buffer
+  "g" 'keyboard-escape-quit
   "x" 'save-buffers-kill-emacs
   "e" 'find-file)
 
