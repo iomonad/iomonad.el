@@ -1,0 +1,248 @@
+
+[Tue Nov 21 2017]
+*** You have joined channel #haskell				        [11:51]
+*** Topic for #haskell: https://www.haskell.org |
+    https://wiki.haskell.org/IRC_channel | Paste code/errors:
+    http://lpaste.net/new/haskell | Logs:
+    http://tunes.org/~nef/logs/haskell/?C=M;O=D |
+    https://www.reddit.com/r/haskell | Admin: #haskell-ops | Offtopic:
+    #haskell-offtopic | https://downloads.haskell.org |
+    https://summer.haskell.org Summer of Haskell 2017
+*** #haskell: topic set by mauke!5lzdiZJQGk@p3m/member/mauke, 2017-07-31
+    14:45:11
+*** Users on #haskell: trosa-work fendor fsestini Hoegerkartellen kroogs
+    localhorse_ aplainzetakind JackOfBlades zero_byte locallycompact
+    coot___________ JeanCarloMachado ziocroc3 Matias34 TipsyMe netheranthem
+    ma27 pfurla ub zcourts btk ziyourenxiang xtreak_ bennofs fr33domlover
+    oish_ ChinyLinz Lauda taktoa besenwesen pavonia zzq beerdrop mohsen_
+    ninedotnine marr yoneda Enigmagic dkremer_ alios a_t_ aib42 db8093246 raid
+    PatrickRobotham nickr kolko Foritus remix2000 runge
+*** Users on #haskell: Taneb thc202 connrs ertes-w leat gawen zariuq albertid
+    Swizec markus1189 prophile raichoo mattyw BartAdv acidjnk serendependy
+    danpalmer knupfer mfukar takuan danvet aloiscochard Cheguacamole durandal1
+    uptime Khisanth quchen bazukas slomo quobo dec0n davr0s alfredo
+    DigitalKiwi ericsagnes ThomasLocke justanotheruser vlatkoB osa1 _rht
+    mountaingoat boj lionaneesh ivans banc jhrcek andyo odamn Frankablu nahra
+    inhortte BioSpider ForceRecon martingale
+*** Users on #haskell: revprez_ asthasr__ azahi castlelore infinity0 TuXic[m]
+    Zialus codesoup \u tabemann felixsch__ alexelcu JappleAck Wizek govg ekr_
+    theDon hamishmack sword865 nickolay juhp esssing toby1851 lagothrix
+    hucksy_ m1n Xal wagle noobineer nighty- brynedwards R0b0t1_ wei2912
+    kuttifunk eschnett lambdamu_ urdh skypatrol Youmu peterhil LKoen_ ons ego
+    XorSwap plutoniix jkup gnusosa M4GNV5 alveric1 nakal Destol schoppenhauer
+    noam__ conal Yuras tomku ketralnis
+*** Users on #haskell: olligobber Ankhers soncodi luigy ccase tokik tippenein
+    Adeon abrar clinton niklasl d6e matheusrv[m] hiptobecubic verement
+    jcarpenter2 qzo hiratara tg carlomagno johnw nshepperd_ rblaze mkoenig
+    m0rphism waut3r obiwahn whoisxy nshepperd1 cpup tusj owickstrom Guest98560
+    dxld IRCNickname treehaqr gehmehgeh fabien_ xormorBrecaBatMU raynold
+    electrocat thunderrd DTZUZU Arcaelyx infandum StoneToad remexre
+    gregoire[m] RayNbow`TU acarrico toure_biab betawaffle
+*** Users on #haskell: jeddak etiago fnurglewitz obihann zeroed fxrs yeeve_
+    yezariaely vikraman kav caryoscelus a3Dman billxajo mou marienz simon
+    pikajude TMA NinjaTrappeur dtpop[m] jfredett_ zaquest_ ContessaTP LiaoTao
+    revprez_stg rightfold rzhanka tnks falafel chirpsalot Chobbes jgornick
+    bsmt Cheaterman phryk LnL ck_y Unhammer Tesseraction dpower wonko7 bydo
+    atk cic Philonous maerwald mattp_ cyphase chenyu cdk bartholin TimWolla
+    max-m troydm Ranhir bgamari aminb_ Cale
+*** Users on #haskell: Fairy ggVGc ctag perrier-jouet OnkelTem sdhand bonz060
+    mceier toppler ft jcjf hydraz aminos[m] MufeedAli[m] catsup Neo Arguggi
+    sw1nn Bashmetim ertes marcopullo just_test1ng[m] jrm benana Hafydd Limeth_
+    waylon531 alexbiehl koz_ nshepperd xinming vimto joebetz Maxdamantus
+    Vorpal Velpoman gfixler henrytill ski ssn__ athan raindev codeshot destiny
+    jchia_ elomatreb jrabe erikd oh_lawd MindlessDrone slackman1 pavlicek
+    paraseba theorbtwo Fekinox nullifidian
+*** Users on #haskell: jpcrs sujeet heurist joncfoo ph88^ dedgrant_ Gabemo
+    srdqty Igloo rembo10 mniip yahb rotaerk fryguybob juri_ padre_angolano
+    AntiSpamMeta cpape sun777 AndreasK dschoepe angular_mike etorreborre
+    magthe Ulrar sibi_ liste artagnon tv alexteves dogui bsima erg newsham
+    dolio rwarfield dmiles swalladge hvr albel727 barrucadu omilu oberstein
+    minhnhdo[m] absurd[m] mstruebing Nd-69-M earldouglas vvz JHBrannam[m]
+    Aidan[m] avn jtcs vaibhavsagar moei dibblego
+*** Users on #haskell: sh4pe[m] geppettodivacin alsoStevenXL centril ryan_vw
+    Eagle_Erwin dcoutts jdevlieghere Someguy123 chrissl slester runde polux36
+    buhman anoe dmj` NocnaShada bbielsa wedens Sose rossberg nonlinear tsani
+    Archrover brent80_plow Bane^ bs syamaoka bengt_ geal reinh1 RazorX tctara
+    Solarion HalfEatenPie fairfieldt edran tolt Kneiva lyxia drdo valkyr2e
+    NemesisD pikhq mulk Burnout641_ jamiis_ eagleflo [exa] ramatevish c_wraith
+    aidecoe Vq Tspoon_ sigmundv_
+*** Users on #haskell: amuck mitchty jaargon Ornedan srk clever jstolarek jix
+    thoros Hijiri jol andjjj23 diskie apeyroux Lokathor phadej dysfun benzrf
+    sleepynate catern fergusnoble cetchmoh prooftechnique altooid jdnavarro
+    przemkovv noctux nerteren joeyh fredsir Gothmog_ dunj3 lispy ircbrowse
+    magnuson przembot cross MitchW mk-fg byorgey coeus spoonm mnoonan avocado
+    ziman gabiruh wilx __main__ Tuplanolla ManiacTwister x1n4u kuchi Axman6
+    a3f ncl28_ [df]_ butterthebuddha
+*** Users on #haskell: cheater Dykam yaiyan crosleyt qaz iphy swhalen
+    sudoreboot[m] KevinMGranger am2on magnap naviknair7[m] moonrunes[m]
+    M-herah Li[m] guest69[m] superobserver[m] s0ra[m] jmnoz dkellner[m]
+    Mike[m]2 bustillo[m] kosmikus[m] asm[m]1 islamicwarez[m] wisn[m]
+    KENNYNR1[m] mrgraffe[m] hendrik[m] LangeOortjes[m] apigeon[m] rprospero[m]
+    devpav[m] TimWolla[m] MarkusK[m] ddbbuu[m] AX3L[m] TylerCecil[m] mad[m]1
+    psYchotic[m] zhangjiji[m] statusfailed akshay7777[m]
+*** Users on #haskell: ma-ku[m] tylerjl MarcelineVQ zv Laney revprez_1nz
+    machbio jimmyrcom dmwit infinisil arw liff karshan kosc_job quaestor
+    hive-mind emmflo kwantam pdxleif dilinger codebje orzo bradparker m cgfbee
+    acro DustyDingo HallaSur1 xtore Xnuk shutdown_-h_now Sigyn amx seliopou
+    coup tpreston dminuoso majoh_ kaffepan1a iross_ ChongLi_ threeve_ ghostyyy
+    dsal trosa pyrtsa magicman n3parikh Raptor8m3 reallycooldude wedify RGamma
+    Natch Jikstra[m] quicksilver drcode
+*** Users on #haskell: averell gspia cpallares aweinstock GreySunshine
+    richi235 prg318 amiri ggherdov mbrcknl_ johs iravid darthThorik cgag jonrh
+    mindtree thi_ fuziontech gleber_ Rubas[m] Guest312594[m] eyenx
+    Guest291964[m] Vipernet1220[m] Mistv[m] caimbeul[m] frunobulax[m] rimon[m]
+    sssi1ver[m] Bimmie[m] hesiodos[m] howsiwei[m] seto[m] packetbiompm[m]
+    Guest1573[m] scrypso[m] Verandetten[m] yaspoon[m] h_ndrik[m] jnonpony[m]
+    fxk[m] Litom[m] Monad[m] zmre[m] ptek[m]
+*** Users on #haskell: mrhania[m] thebeast[m] maverickwoo[m] mark_c
+    lixiang4u[m] subz[m] mk[m] kwaku[m] Elorm[m] M-HirmeS Andry976[m]
+    PatrickM[m] magog[m] Jasonjunsu[m] prot[m] joakimf95[m] sphalerite
+    himmAllRight[m] etXzat[m] porcow[m] grahf[m] M0xfiras[m] fgaz[m]
+    stellis[m] grdryn BartGroeneveld[m JohnnyReb[m] Guest340521[m] asthma[m]
+    ElliotKiyomizu[m c0ff33[m] M\u202e[m] km42[m] nine-h[m] kkr[m] shekel[m]
+    ycy[m] guest236[m] caro401 shsnthstnhs[m] kebertx[m] guest121[m]
+*** Users on #haskell: mrhunky[m] mrdaak[m] djquant[m] toa[m] psan[m] Reyu[m]
+    sudom0nk[m] Zarthalan[m] dirb j0ni[m] razvanc-r[m] DavesTestingAcco
+    tuxitagnu[m] dbramucci[m] sgoody[m] usedname[m] pacmansyu[m] boash[m]
+    stevendai[m] Mougan[m] ArrayWindrunner[ hugogomes[m] a89lk[m] rizo[m]
+    teuffy[m] Scapin[m] Shaunthesheep[m] gutigen[m] polux[m] Niboor[m]
+    burgundy[m] superpat[m] Deleh[m] riaqn felipeac[m] SansFr[m] goolord[m]
+    ajtowns[m] nimbus[m] adziahel[m] oozz[m]
+*** Users on #haskell: jvalleroy[m] vrnithinkumar[m] ramirezD[m]
+    testingriotnmatr Luguber[m] saci[m] tobim[m] Nerka[m] ya-alex[m]
+    thekyriarchy__ octalsrc[m] avatias0[m] WinterFox[m] Courage[m] cuddly[m]
+    pedroteo[m] meinashi[m] Overload[m] chocowheel[m] Cadey[m] crapman[m]
+    antiless[m] unclechu icen[m] Ed2bno1[m] Sasasw SijmenSchoon[m] M-kitsune
+    adampaigge[m] WolfLightning[m] apardo[m] jsonhigh[m] ub[m] peel[m]
+    fonadius[m] chominist[m] schum[m] narispo[m] Heino[m] emme[m]
+*** Users on #haskell: moka[m] Naughtmare[m] bramvdbogaerde[m pyrtheibarit[m]
+    Fulgjon[m] XertroV[m] rcat[m] Akito[m] gylpm[m] Frytka[m] lucnx[m]
+    ThousandLions[m] mlainz[m] Michi[m] Ubiquitous[m] okkk intheclouddan[m]
+    tommy0010[m] peddie[m] bbslclubbin[m] beemo[m] FederalRick[m] hiq[m]
+    hdurer[m] abbiya laaksoan[m] PifyZ[m] trevorriles[m] M-rgh mtncoder[m]
+    ltq520[m] Barnabas[m] phittacus roninkaizen[m] xffox[m] elpfen[m]
+    ninegua[m] CryptoCalsius[m] jacobleach[m] Flecheck[m]
+*** Users on #haskell: jhb2345 Makinit[m] ByteEater[m] rydia5[m] puminya[m]
+    chuzz[m] talesmantovani[m chaseroycroft[m] fbreitwieser[m] M-ms synopz[m]
+    lkh[m] scanleft[m] joncfoo[m] dpacbach[m] tibike_m[m] LucasFrancesco[m
+    daoo[m] el_tejon[m] Maikel_Experius[ pingfreud[m] lonokhov[m] cwgoes[m]1
+    Squidnyan[m] levzhazeschi[m] rakete softashell georg3[m] thisLight[m]
+    ngross[m] Dako300[m] huda[m] zineje[m] noxeternae[m] closures999[m]
+    ttk2[m] riotartist[m] yashi[m] innaytool[m]
+*** Users on #haskell: nh2[m] toumi124[m] testtt55[m] seizo[m]
+    romanzolotarev[m NickSeagull[m] mith[m] asenski[m] kilian[m]1 NickHu1
+    spotter[m] jomari[m] zukonake[m] M-whoops M-x-matrix[m] M16_29[m]
+    Novitsh[m] kimchi[m] masaeedu[m] charlag[m] Adau[m] bgrayburn[m] xeel[m]
+    ketanhwr phil_frontal[m] JackM[m] nullset[m] plll[m] wubbalubbadubdu4
+    sebisebi[m] futpib[m] khac[m] ItevNabdifNi[m] rainbyte[m] stites[m]
+    Matthew[m] hotsocks[m] zalipuha[m] puffnfresh m3tti[m] etcinit[m]
+*** Users on #haskell: Rifa[m] Obscurity[m] idnar[m] Masaomi[m] M-Illandan
+    strixy[m] wizzup[m] thekyriarchy ElyKar[m] TFX[m] dtcristo
+    Mcpurplemuffin[m riadvargas[m] trikl[m] rcg[m] geetam aniketd[m]
+    schplaf[m] mossid[m]1 Alexander_Hansen slartibartfast[m chaetopterus[m]
+    redviking[m] sypwex[m] thejonny[m] SuperW[m] arslanatajanov[m newman[m]
+    tangled_z[m] fib11235[m] MikasiCoyote[m] piluex[m] SolarAquarion
+    Tristan-Speccy rellen o0o[m] Nuva[m] sn[m] goodboy[m] hakan[m]
+*** Users on #haskell: undu[m] hpd_m MohdSKhoeini[m] MawKKe[m] M-krsiehl
+    drasich[m] JanPath[m] M-kevinliao lysgaard[m] jerin[m] angelbeats[m]
+    WilliamHamilton scde davidar tester668[m] kritzcreek sgal[m] cutie
+    unknownln aspiwack[m] davidar_ albertsg[m] aer[m] sirius[m] m4sk1n
+    spacekitteh[m] bb010g berton turt2live unlmtd ollieh freeman42x M-berdario
+    trevortknguyen[m pellegrino tfc[m] bennofs[m] herzmeister[m]
+    reactormonk[m] M-BostonEnginerd zaphar_ps[m] equalunique[m]
+*** Users on #haskell: jyp[m] elvishjerricco dt343gs[m] rexor[m] Cthalupa
+    twopoint718 mjo iliastsi ljhms beccamorgan ynyounuo dtulig anhduy
+    mikeplus64 felixonmars gsingh93 noxd gothos uwap jameseb andromed1-galaxy
+    Adluc wunki Ferdirand koala_man Drezil_ sjl_ harmaahy1je Chousuke_
+    cstrahan hsiktas metalrain_ sdemos rann bytesighs Argorok shans_
+    customminer vodkaInf1rno joedevivo lpsmith stass Tehnix mikosty deba5e12
+    Athas Xion_ cjwelborn Guest24088 solarus Majiir phaazon
+*** Users on #haskell: SCHAPiE atomi noplamodo sbjorn inr idupree2 tinco teej
+    SuprDewd Paks yrid thomaav poga capisce ClaudiusMaximus tolt_ hc pacak
+    valdyn `0660 CuriousErnestBro Intensity bendricklamar oleks jakutis nek0
+    dysfigured lassulus Takumo marble_visions Amadiro asjo Lierdakil jle` dpn`
+    duncan^ ahihi k hanna hiredman jokester jounaz^ orion wtw mearnsh tabaqui
+    kefin jchia trcm Strix Voldenet echoreply divVerent Cerise scopedtv kgadek
+    chrzyki Reisen burp sqrt2
+*** Users on #haskell: staffehn jinblack bbaren fluxit iw00t hsyl20 Wamanuz2
+    datajerk APic rbocquet rom1504 Deewiant TallerGhostWalt ernst grumble
+    baetheus garphy lieven carc hodapp eL_Bart0 Elsi tek0 ij stefan-__ clog
+    carbolymer Oipo bananagram remy Squarism naudiz brixen bartavelle
+    niHiggim_ le_jonge scav liyang Soft bitemyapp xpoqp srhb bbee ehubinette
+    greeny cheshircat mak` TyOverby__ meck cdornan_ lukexi adamCS hpc
+    joachifm_ bjobjo numberten jrslepak Clint mxf flori_
+*** Users on #haskell: opqdonut SpaceKni1ht posco bno2 WzC anelson xxpor
+    monochrom jared-w Twey japesinator_ akermu LeaChim robin__ baweaver
+    navilan drk_lrd_777_ eddsteel kloeri __name__ sanitypassing flebron
+    ianconnolly nkpart ocharles ixian tazjin Jonno_FTW linduxed sdrodge
+    fakenullie nwf bollu Benzi-Junior @glguy nekomune nathyong tomus destiny_
+    ycheng petercommand Rembane agrif niklasb tsahyt yarou aatxe oherrala
+    MitchellSalad ahf_ fgaz rntz amerlyq malthe wladz
+*** Users on #haskell: matthavener jlouis implementation_ M2tias hrnz m4lvin
+    ps-auxw mrd anishathalye SAL9000 shymega lukky513 wizonesolutions
+    codedmart OliPicard amatecha seccus trig-ger angerman spicydonuts
+    zpconn__________ lumimies mkurkov_ lexi-lambda twold monad_cat kyagrd
+    andrew_n_ dgonyeo solidsnack andreypopp sclv hansihe rgrinberg Ober
+    eacameron dstockwell nelll dgpratt dumptruckman kensan schaeferpp huonw
+    solatis cschneid acfoltzer akemot bogdanteleaga
+*** Users on #haskell: RevJohnnyHealey heath wadadli Meanirelli jdt malt3
+    runeks oldsnakey ReinH Scorchin carter runawayfive nbouscal ebutleriv kipd
+    cansis capicue niveus Tritlo gridaphobe akl avdi prizim ephemera_ Novitsh
+    Xorlev zmanian _6a68 SegFaultAX emerson Lord_of_Life Meow-J zymurgy nopf
+    aijony Warrigal tabaqui1 zyla mivael _kit_ rootnode electrostat
+    ironChicken zenzike MagneticDuck thallada kapu cchalmers tmciver
+    texasmynsted shikhin _flow_ cocreature hegge_ Randy
+*** Users on #haskell: geekosaur mathu chriswk salva langkid1 CARAM___ johtso
+    paf31 ericbmerritt_ Bengi jml stig stasku mbrock baamonde pchiusano
+    Tallenz JSharp lopex lynn prefork gornikm AlainODea AWizzArd logcat kipras
+    feepo Jinxit heinrich5991 nille {AS} twomix stephe SolitaryCypher bind
+    scinawa canta antismap joeytwiddle platz junktion bluepixel dersquisher
+    pranz nurupo stux|RC pita papapishu julmac xplat vfs_ raek Bigcheese
+    tharper_ rizary jw358 sbrg SlashLife relrod
+*** Users on #haskell: zgrepc si14 banjiewen milessabin Cir0X paws_ spinda
+    edwtjo chindy dxtr reu_ pmade mk_modrzew nyuszika7h nano- admwrd fingerzam
+    verlet64 tomaw joehillen pikolinosimo leah2 Geekingfrog jluttine zebrah
+    tumdedum michaelw ptek zerokarmaleft DoubleJ ethercrow meinside pdgwien
+    milli madknight wrengr_away felixsch_ Profpatsch Klumben grayhatter ftop
+    kriztw fearless_man lambdabot kini Xe Purlox mitch_ Ewout esph vin-ivar
+    ab9rf otulp worch tdammers Nik05
+*** Users on #haskell: _janne swflint jophish lavalike cyberlard arkeet
+    ids1024 nikivi Fubar^ dan64- mauke jbalint mmaruseacph2 marens wayne
+    riatre byte512 marcel fall_ Deadhand timothyh danielglh abbe mimi_vx dqd
+    alexknvl lukeshu cjay- vqrs nisstyre Forkk mdarse sns cow-orker _cyril_
+    miklcct Flonk Tharbakim noexcept tripty Boreeas bencryption no-n
+    WhereIsMySpoon dh lokydor acowley Moyst gargawel stux|RC-only g2` cods
+    yushyin tzaeru Jaxan Zoddo Ninja3047 S007 dandan86
+*** Users on #haskell: robogoat armlesshobo zipper PotatoGim Firedancer bsrm
+    caasih Frans-Willem zebr rotty sveit dpanth3r NextHendrix int-e freeside
+    Liskni_si jorj nesqi foolswood Pilfers froztbyte monty ezyang cfoch-al1
+    raibutera killtheliterate brisbin lachenmayer alanz kiboneu kosmikus
+    saftsuse andrewmc1eigh mendez_ bcoppens minad int0x27h thebnq buoto1 zekt
+    c-rog pierrot thoradam TabAtkins mlen Guest63586 thomashoneyman JoJoen
+    jorendorff ijp alp suppi adelbertc simony
+*** Users on #haskell: wavewave reem incomprehensibly cdal sa1 tortal
+    dpepsilon kaol comboy Quintasan x-n2o eikke TommyC rjungemann sm crlane
+    supki ambrosia gareth__ billstclair dustinm nemesit|znc isaac__ spion
+    edwardk houli micro Saizan z0ttel xa0 bod_ wto Unode Ke saurik peschkaj
+    osfameron ahf pfoetchen pelegreno_ pharaun tarcwynne__ Deaddy ephemeron
+    jzl terrorjack caw__ heyj sbauman rodarmor libbyk Willis megaTherion
+    vikram__________ davean h30 thoughtpolice zph bigs
+*** Users on #haskell: bitonic edofic tjpeden xplat|work peteretep wyvern
+    xnyhps jmct S11001001 mbeidler joel135 yaknyasn redcedar KaneTW mantovani
+    qmm pandem GGMethos epta bjs Guest82765 earthy tessier bshelden michalrus
+    mutsig kaychaks Morgawr wamaral klugez beaky bxc Blkt peddie SuperTux88
+    PyroLagus Cathy anderson Sornaensis benonsoftware hongminhee
+    frontendloader Guest18532 dashed defanor mt sdx23 rjeli Akii cynick bwe
+    paroxp dsm__ Niamkik BytesAndCoffee changyj Zemyla
+*** Users on #haskell: statusbot gilbertw1 wting fiddlerwoaroof grandy____
+    niluje ryanbooker Kamuela strmpnk jzelinskie etrepum micmus happy0 ongy
+    ventonegro procgen michi7x7 rofer MalfaitRobin greymalkin pasukon gareth_
+    jlewis asm89 danzimm rootmos twk- StianL xacktm markhuge guios kubrat
+    ByronJohnson gesindel exferenceBot intelux_ mpickering bgyss feltnerm
+    noobst mystfox integral nonzen Zowlyfon Fylwind pleiosaur jackhill
+    Fuuzetsu dredozubov madsj Xandaros bus000 Logio
+*** Users on #haskell: da-x hexagoxel Eliel demiurge brennie abra0 ec2-user_
+    zomg EvanR Nikotiini alek skeuchel cjh` Desoxy hjklhjklhjkl absence
+    Guest60956 Biohazard DDR MasseR zachary12 Jello_Raptor blackdog Ring0`
+    suzu d3lxa nikolah shapr kfish nilOps mgaare wz1000 croben bvad exio4
+    reptar_ PHO so @ChanServ

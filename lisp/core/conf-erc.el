@@ -41,5 +41,11 @@
 				    ("rizon.net" "#code")))
 ;; (defun launch-irc ()
 ;;   "Launch irc")
+(erc-log-mode) 
+(setq erc-generate-log-file-name-function (quote erc-generate-log-file-name-with-date))
+(setq erc-save-buffer-on-part nil)
+(setq erc-save-queries-on-quit nil)
+(setq erc-log-write-after-insert t)
+(setq erc-log-write-after-send t)
 
 (provide 'conf-erc)

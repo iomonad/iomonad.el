@@ -1,0 +1,104 @@
+
+[Tue Nov 21 2017]
+*** You have joined channel #clojure				        [11:51]
+*** Topic for #clojure: RIP Raynes http://bit.ly/2g9gGpG | Clojure, the
+    language http://clojure.org | Currently at 1.8.0:
+    http://bit.ly/clj-changes | See also #clojure-beginners | Discussion:
+    http://groups.google.com/group/clojure
+*** #clojure: topic set by
+    puredanger!sid80614@gateway/web/irccloud.com/x-dudtpicokyglmxpg,
+    2016-12-07 14:35:19
+*** Users on #clojure: trosa-work JackOfBlades Kajtek HydroX|de awshawmn
+    xtreak_ xcm csed marr szalansky iAmDecim_ bengillies ashnur swoldanski__
+    ptisnovs negaduck osfabibisi jstavel leaves fikka kolko mdeboard Guest45
+    mattyw dacechavez BigSafari je lionaneesh voidlily lif nahra BioSpider
+    blake_ meandi_2 rohitpaulk Hanonim LocaMocha govg commanderkeen nighty-
+    ChiralSym_ claw_ conan akhudek stee_3 plutoniix pagurus Kaisyu dene14
+    noam__ tomku Ragnor tg zacts technikhil[m]
+*** Users on #clojure: IRCNickname treehaqr shadgregory mnemnion tolstoy
+    silven dyelar DTZUZU etiago egli space-wizard lukasz webguynow ale``
+    lxsameer carmack TMA jetlag zeeny chiffr rnewman wonko7 codelahoma
+    Romantic jsgrant mp___ troydm RandyT nullman kandinski sw1nn marcopullo
+    apetresc emperorcezar CobHead danopia TimMc myk267 naprimer2 daemian_ m_3
+    mankaev[m] yason gigetoo plathrop robink sujeet ryanf heurist jinks laxask
+    jsavalle mtl_ cpape Carr0t gideonite dcluna
+*** Users on #clojure: phaseNi harrigan TEttinger TEttinger2 bsima dmiles
+    awwaiid lnostdal omilu scamander jasom sh4pe[m] ninjudd victorbjelkholm
+    selfsame chujev malyn slester NocnaShada agile perplexa MarkusDBX r0kc4t
+    aliem justin_smith RazorX wkalt lotia cp9 Kneiva Guest16571 eagleflo
+    birryree_ devurandom kraft emk sgarciapdx stain ridcully faxmodem dysfun
+    Deraen ctp_ bill_ nsa__ Gonzih cross sorabji torvi DougNYC gabrbedd
+    intrigue jballanc kuchi detran markmarkmark
+*** Users on #clojure: swhalen ErhardtMundt sudoreboot[m] demyan[m]
+    naviknair7[m] nicorikken[m] taohansen M-Dominic stoneridge famicom[m]
+    michalrmiller[m] bbrinck[m] ivar[m] devurandom[m] kkazuo[m] mtgred[m]
+    jaosef[m] nexysno hive-mind metellus kenrestivo ane postpunkjustin ieure
+    cgfbee engblom amalloy andrewzah tme11 nivekuil chadhs_ ChongLi_ e0f r4vi
+    Robbo` Raptor8m3 cow-orker ragge_ averell gozala ggherdov rbx[m]
+    MikasiCoyote[m] p_brc[m] sundarj[m] mantycore[m] Ivan[m]2
+*** Users on #clojure: ZXSHNh9P[m] Akito[m] plexus[m] mox601[m] Seylerius
+    shinep[m] roborob[m] jlpeters[m] veer66[m] Luguber[m] bamaung[m]
+    henriqueqc[m] robsteranium[m] sooheon[m] borh[m] bubblyBumblebee[ mp[m]1
+    msorc[m] timgluz[m] albrecht[m] willghatch[m] shanipribadi[m] eval2020[m]
+    mt[m] wingedpanther[m] voltecrus[m] Miikka[m] rizo[m] kammd[m] M751cul[m]
+    moka[m] arpunk[m] anantpaatra candlelightstori kkr[m] chominist[m]
+    happy_gnu[m] sickill[m] M-whoops awwaiid[m]
+*** Users on #clojure: lambdanana[m] nomahr[m] miguelb[m] shabeeraly[m]
+    j0ni[m] hugogomes[m] solatis[m] M-martinklepsch cnygaard[m] riadvargas[m]
+    petrounias[m] gonewest818[m] spouria[m] og[m] j-pb[m]1 M-x[m] marsneo[m]
+    watzon igorline[m] strixy[m] dignati[m] thekyriarchy necronian Dony[m]
+    pascal[m] mofeien[m] s-makrushin[m] maacl[m] alvaroabascar[m] skeptric[m]
+    flyingsky[m] ehsanheydariyk[m ericst[m] leonoel[m] p4v4n[m]
+    M-gavinjohnnoona NingSun[m] ChrisHutchinson[
+*** Users on #clojure: puminya[m] mwfogleman[m] aisamu[m] kjellbenny[m]
+    runejuhl[m] m3tti[m] regloh[m] anthony1618[m] ballpointcarrot munsel[m]
+    technomancy` Ricardo[m]2 asdfwer[m] darestiet[m] igorhvr[m] kloimhardt[m]
+    kmwang[m] danielsz[m] rakyi[m] Matthew[m] rplevy[m] equalunique[m]
+    himmAllRight[m] hanga18[m] edvorg[m] zerga[m] ERIIX[m] Giphy[m] heyarne[m]
+    gim[m] Jach[m] AlekseiMiheev[m] tytusmapp[m] j-pb[m] mwooller[m] plll[m]
+    bendlas TrickOrTreat[m] MohdSKhoeini[m]
+*** Users on #clojure: calgoo[m] rnkch[m] ruser23[m] firemound[m] mcmarto[m]
+    fork[m] mtncoder[m] M-minikomi vizanto[m] winktest2[m] seancorfield[m]
+    dzr_ onetom[m] nickik[m] jonathanj bheesham[m] bgrayburn[m] elnygren
+    unclechu pellegrino dirb xj9[m] astronavt[m] joshua[m] zaninime Shayanjm
+    kocubinski s455wang noxd inukshuk erdic Shozan Chousuke_ MightyJoe
+    jeremyheiler metalrain_ rann dnolen mihaelkonjevic sickill reiddraper
+    lukaszx0 puredanger WorldsEndless turbofail gendl
+*** Users on #clojure: itruslove bcmiller atomi noplamodo andereld telex fps
+    Intensity dysfigured ck_ clojurebot hiredman mearnsh fith Dr-Gesus sfz-_
+    datajerk scgilardi tabakhase spdvcs carc someone dyreshark brixen goodger
+    zakwilson Vaelatern truemped Para` numberten sobel opqdonut willb_ fmeyer
+    snits_ drk_lrd_777_ notbrent machty ljosa nekomune runejuhl jeaye
+    highclasshole Licenser presto kitallis pepijndevos broquaint dj_ryan
+    Empperi j0ni matthavener jlouis dottedmag
+*** Users on #clojure: arrdem shymega tcrawley-away AeroNotix mfikes pmbauer
+    noblepayne danzilio andrewstewart zpconn__________ augustl l1x andreypopp
+    gocevida pjstadig Ober Guest89890 jsime JoshL solatis brandonz sduckett
+    azyr matt_c the-kenny ozzloy obfusk rjknight Scorchin Tritlo avdi esep
+    Xorlev SegFaultAX zymurgy aijony luma cdombroski spacepluk andlin chriswk
+    adulteratedjedi dan|ic jlpeters baamonde mgdelacroix sophiebits arkh
+    logcat joeytwiddle insamniac raek rufoa
+*** Users on #clojure: PeregrinePDX sbrg kwmiebach si14 banjiewen obobo
+    AbbyJoy mnemonikk dxtr akash47_ MerinoBailon j-r madscientist` racycle
+    martinklepsch fingerzam tomaw chaosdav amosbird Geekingfrog zerokarmaleft
+    Wojciech_K pdgwien ihabunek doop Klumben grim_radical marvi Ewout HDurer
+    wink tdammers technomancy _janne justinmcp gf3 nikivi wilornel_ borkdude_
+    gmcramm newgnus marcel lsyoyom danielglh njd ragepandemic bencryption
+    einar kent\n lokydor mariorz danlarkin l2x
+*** Users on #clojure: larme Tawonga SOO7 armlesshobo zipper Rovanion alkyl
+    rotty dpanth3r yogthos vt240_ Luyt lachenmayer kilimanjaro tobel anbz
+    jerme_ fivebats jssmk joeygibson merlinsbrain_ danlentz starlord d4gg4d_
+    metric d_run babilen sirn juancate rjungemann AdmiralBumbleBee codefinger
+    paratox greghendershott leptonix dustinm ibdknox alexbaranosky lancepantz
+    gko xa0 arbn lobotomy saurik sebhoss osfameron taneli juba10 p_l
+    pelegreno_ skrblr tarcwynne__ adereth
+*** Users on #clojure: ephemeron caw__ justizin alisdair dylanp_ zph bigs
+    zeeshanlakhani fokz__ enigmeta ikitommi [Neurotic] Lugoues saltsa Morgawr
+    wamaral beaky Blkt mtd mudphone Guest18532 devth benny rome_390 Kingpin13
+    Ash__ amano- hoxu Speed askatasuna fiddlerwoaroof grandy____ rc1140 jgmize
+    joschka Kamuela wickedshell whee rfv JStoker alandipert dorian scriptor
+    bodie_ pasukon utkarsh_ jlewis urzds dantoml terjesb markhuge lukaszk mlb-
+    oh_lawd feltnerm pacon g3funk
+*** Users on #clojure: pleiosaur jackhill octane--_ tvaalen cursork gilbertw1
+    rager kori brand0 devn gcommer wilco larsen Biohazard ordnungswidrig
+    Firedancer zachary12 nilOps mgaare shem @ChanServ Squirm
