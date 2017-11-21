@@ -19,6 +19,7 @@
   "t"  'neotree-toggle
   "u"  'undo
   "r"  'redo
+  "s"  'magit-status
   "v"  'undo-tree-visualize
   "g"  'keyboard-escape-quit
   "x"  'save-buffers-kill-emacs
