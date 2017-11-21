@@ -23,6 +23,9 @@
   "v"  'undo-tree-visualize
   "g"  'keyboard-escape-quit
   "x"  'save-buffers-kill-emacs
+  "o"  'split-window-vertically
+  "p"  'split-window-horizontally
+  "|"  'toggle-window-split
   "e"  'find-file)
 
 (provide 'pkg-evil)
