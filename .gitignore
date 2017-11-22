@@ -17,3 +17,5 @@ packages
 ido.last
 .erc/logs/*.txt
 org/private/*.org
+*.class
+*.o
