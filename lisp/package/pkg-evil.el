@@ -22,9 +22,8 @@
   "u"  'undo
   "r"  'redo
   "`"  'header-insert
-  "s"  'magit-status
+  "g"  'magit-status
   "v"  'undo-tree-visualize
-  "g"  'keyboard-escape-quit
   "x"  'save-buffers-kill-emacs
   "o"  'split-window-vertically
   "p"  'split-window-horizontally
