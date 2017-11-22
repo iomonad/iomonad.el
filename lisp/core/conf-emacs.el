@@ -127,4 +127,9 @@
 ;; Closes that parenthese
 (electric-pair-mode 1)
 
+;; reboot
+
+(defun reboot-init ()
+  (load-file "~/.emacs.d/init.el"))
+
 (provide 'conf-emacs)
