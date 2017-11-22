@@ -2,5 +2,5 @@
 # name: malloc
 # key: malloc
 # --
-malloc(sizeof($1)${2: * ${3:3}});
+($1)malloc(($2)sizeof($3)${4: * ${5:5}});
 $0
