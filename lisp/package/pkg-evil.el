@@ -42,4 +42,12 @@
   "."  'evilnc-copy-and-comment-operator
   "\\" 'evilnc-comment-operator)
 
+;; Oh boi
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+
+(define-key evil-normal-state-map (kbd "C-a") 'move-beginning-of-line)
+(define-key evil-normal-state-map (kbd "C-e") 'move-end-of-line)
+
+
 (provide 'pkg-evil)
