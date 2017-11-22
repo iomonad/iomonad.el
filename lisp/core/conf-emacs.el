@@ -127,8 +127,4 @@
 ;; Closes that parenthese
 (electric-pair-mode 1)
 
-;; ad-hoc zone idle mode
-(require 'zone)
-(zone-when-idle 120)
-
 (provide 'conf-emacs)
