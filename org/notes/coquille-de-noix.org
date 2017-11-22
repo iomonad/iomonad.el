@@ -1,0 +1,49 @@
+* org-mode structure
+Text in org is structured by headings, denoted by lines starting with
+one or more * so we are currently in a section!
+
+** A subheading
+Starts with an extra * and so on
+
+** navigation
+Headings can be expanded or collapsed by moving to the (sub)heading
+and pressing TAB. S-TAB cycles all headings. You can jump to next and
+previous headings with C-c C-n and C-c C-p respectively.
+
+You can move headings up and down to reorder them with the arrow keys,
+using M-up or M-down. You can change the level of headings with M-left
+and M-right (and use M-S-left and M-S-right to also change the levels
+of and subheadings).
+
+** lists
+*** bullet lists
+ - bullet lists can be created like this (start a line with one or
+   more space and a -
+ - pressing M-RET gives you a new bullet
+ - we might also like nested bullets
+   - like this one (I pressed M-RET TAB to indent it)
+   - and another (M-RET now indents to the new level)
+ - the nice thing is that for long lines of text, emacs wraps them
+   so that they line up with the bullet
+ - you can also reorder list items and change indentation using
+   M-up or M-down just like with section headings
+ - you can change bullet style using S-left and S-right
+
+*** numbered lists
+ 1) numbered lists are also possible
+ 2) M-RET gives me a new number
+
+*** checklists [/]
+ - [ ] we can even have check lists
+ - [ ] M-S-RET gives a new item with a check box
+ - [ ] C-c C-c check/unchecks a box
+ - [ ] you can have sub items
+   + [ ] like this
+   + [ ] that can be checked off individually
+ - [ ] and you can track the number of items by adding [/] to the end
+   of a line above a checklist - this updates when you check items off
+
+*** definition lists
+ - definition lists :: these are useful sometimes
+ - item 2 :: M-RET again gives another item, and long lines wrap in a
+      tidy way underneath the definition
