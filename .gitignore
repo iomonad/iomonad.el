@@ -19,3 +19,4 @@ ido.last
 org/private/*.org
 *.class
 *.o
+var

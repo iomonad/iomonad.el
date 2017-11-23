@@ -35,6 +35,9 @@
 (defvar *plugins-dir*
   (expand-file-name (convert-standard-filename "plugins")
 		    user-emacs-directory))
+(defvar *vendor-dir*
+  (expand-file-name (convert-standard-filename "vendor")
+		    user-emacs-directory))
 
 (defun load-config-folders (config-folders)
   "For each folder in emacs's path, load
@@ -56,4 +59,5 @@
 	    *cfg-langs*
 	    *cfg-exp*
 	    *defun-dir*
+		*vendor-dir*
 	    *plugins-dir*))
