@@ -136,4 +136,10 @@
 (defun reboot-init ()
   (load-file "~/.emacs.d/init.el"))
 
+;(setq user-init-file (or load-file-name (buffer-file-name)))
+;(setq user-emacs-directory (file-name-directory user-init-file))
+
+;; make it short
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (provide 'conf-emacs)

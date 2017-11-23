@@ -17,18 +17,22 @@
 (evil-leader/set-key
   "b"  'switch-to-buffer
   "w"  'save-buffer
-  "k"  'kill-buffer
   "t"  'neotree-toggle
   "u"  'undo
   "r"  'redo
   "`"  'header-insert
-  "g"  'magit-status
   "v"  'undo-tree-visualize
   "x"  'save-buffers-kill-emacs
-  "o"  'split-window-vertically
-  "p"  'split-window-horizontally
-  "|"  'toggle-window-split
-  "e"  'find-file)
+  "u"  'org-insert-link
+  "o"  'other-window
+  "d"  'delete-window
+  "D"  'delete-other-windows
+  "h"  'split-window-below
+  "v"  'split-window-right
+  "k"  'kill-buffer
+  "K"  'kill-buffer-and-window
+  "f"  'dired
+  "e"  'helm-find-files)
 
 ;; Lead for evil
 (evil-leader/set-key
@@ -40,6 +44,7 @@
   "cr" 'comment-or-uncomment-region
   "cv" 'evilnc-toggle-invert-comment-line-by-line
   "."  'evilnc-copy-and-comment-operator
+  "gs" 'magit-status
   "\\" 'evilnc-comment-operator)
 
 ;; Oh boi

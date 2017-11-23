@@ -1,5 +1,5 @@
-(add-hook 'elisp-mode
+(add-hook 'emacs-lisp-mode-hook
 		  (lambda ()
-			(electric-pair-mode 1)))
+			(setq mode-name " ξ ")))
 
 (provide 'lang-el)

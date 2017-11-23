@@ -5,6 +5,7 @@
 (defun c-tth ()
   (setq-default indent-tabs-mode t)
   (setq-default tab-width 4)
+  (setq mode-name "⚏" )
   (setq c-set-style "k&r")
   (setq c-basic-offset 4))
 
@@ -32,4 +33,5 @@
 
 (global-set-key (kbd "TAB") 'self-insert-command)
 (setq-default tab-always-indent 'complete)
+
 (provide 'lang-c)
