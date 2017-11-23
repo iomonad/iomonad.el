@@ -21,3 +21,5 @@ org/private/*.org
 *.o
 var
 recentf
+request
+saves
