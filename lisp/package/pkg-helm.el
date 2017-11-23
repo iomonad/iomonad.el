@@ -33,7 +33,6 @@
                      `(:background ,bg-color :foreground ,bg-color)))
       (setq-local cursor-type nil))))
 
-
 (add-hook 'helm-minibuffer-set-up-hook
           'spacemacs//helm-hide-minibuffer-maybe)
 
