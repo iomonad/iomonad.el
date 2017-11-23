@@ -21,7 +21,7 @@
   "u"  'undo
   "r"  'redo
   "`"  'header-insert
-  "v"  'undo-tree-visualize
+  "y"  'undo-tree-visualize
   "x"  'save-buffers-kill-emacs
   "u"  'org-insert-link
   "o"  'other-window
