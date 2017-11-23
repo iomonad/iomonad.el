@@ -20,3 +20,4 @@ org/private/*.org
 *.class
 *.o
 var
+recentf
