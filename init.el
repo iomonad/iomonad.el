@@ -51,6 +51,8 @@
 		   (directory-files config-folders t "\\.el")))
     (message "Directory \"%s\" niet gevonden. Geen extensies zijn geladen." config-folders)))
 
+;(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
+
 (mapc (lambda (x)
 	(load-config-folders x))
       (list *cfg-core*
