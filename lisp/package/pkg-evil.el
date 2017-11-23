@@ -61,4 +61,9 @@
 (define-key evil-insert-state-map (kbd "C-n") 'next-line)
 (define-key evil-insert-state-map (kbd "C-p") 'previous-line)
 
+(define-key evil-normal-state-map (kbd "C-w") 'copy)
+(define-key evil-normal-state-map (kbd "C-y") 'yank)
+(define-key evil-insert-state-map (kbd "C-w") 'copy)
+(define-key evil-insert-state-map (kbd "C-y") 'yank)
+
 (provide 'pkg-evil)
