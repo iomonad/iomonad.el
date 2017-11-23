@@ -142,4 +142,11 @@
 ;; make it short
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Fold wrappers
+;(require 'folding)
+;(folding-add-to-marks-list 'c-mode "/*{{{" "}}}*/" nil t)
+;(folding-add-to-marks-list 'cc-mode "/*{{{" "}}}*/" nil t)
+;(folding-add-to-marks-list 'perl-mode "/*{{{" "}}}*/" nil t)
+;(folding-add-to-marks-list 'python-mode "#{{{" "#}}}" nil t)
+
 (provide 'conf-emacs)

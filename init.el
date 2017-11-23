@@ -61,5 +61,5 @@
 	    *cfg-langs*
 	    *cfg-exp*
 	    *defun-dir*
-		*vendor-dir*
+	    *vendor-dir*
 	    *plugins-dir*))
