@@ -1,5 +1,4 @@
 ;; bloat af
-
 (use-package helm
   :ensure t)
 
@@ -34,12 +33,42 @@
                      `(:background ,bg-color :foreground ,bg-color)))
       (setq-local cursor-type nil))))
 
-
 (add-hook 'helm-minibuffer-set-up-hook
           'spacemacs//helm-hide-minibuffer-maybe)
 
 (setq helm-autoresize-max-height 0)
 (setq helm-autoresize-min-height 20)
 (helm-autoresize-mode 1)
+
+(setq helm-idle-delay 0.0 ; update fast sources immediately (doesn't).
+          helm-input-idle-delay 0.01  ; this actually updates things
+                                        ; reeeelatively quickly.
+          helm-yas-display-key-on-candidate t
+          helm-quick-update t
+          helm-M-x-requires-pattern nil
+          helm-ff-skip-boring-files t)
+
+(setq helm-candidate-number-limit 100)
+(setq helm-display-header-line nil)
+(set-face-attribute 'helm-source-header nil :height 0.1)
+(setq helm-split-window-in-side-p t)
+(defvar helm-source-header-default-background (face-attribute 'helm-source-header :background))
+(defvar helm-source-header-default-foreground (face-attribute 'helm-source-header :foreground))
+(defvar helm-source-header-default-box (face-attribute 'helm-source-header :box))
+
+(defun helm-toggle-header-line ()
+  (if (> (length helm-sources) 1)
+      (set-face-attribute 'helm-source-header
+                          nil
+                          :foreground helm-source-header-default-foreground
+                          :background helm-source-header-default-background
+                          :box helm-source-header-default-box
+                          :height 1.0)
+    (set-face-attribute 'helm-source-header
+                        nil
+                        :foreground (face-attribute 'helm-selection :background)
+                        :background (face-attribute 'helm-selection :background)
+                        :box nil
+                        :height 0.1)))
 
 (provide 'pkg-helm)
