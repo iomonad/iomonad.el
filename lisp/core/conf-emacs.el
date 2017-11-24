@@ -1,6 +1,7 @@
 ;; File: conf-emacs.el
 ;; Author: iomonad me@trosa.io
 
+;; ~~ Global Block ~~
 (setq debug-on-error t
 			gc-cons-threshold 100000000
 			load-prefer-newer t
@@ -30,19 +31,24 @@
 			auto-save-list-file-prefix nil
 			auto-save-default nil)
 
+;; ~~ Debloat init ~~
 (menu-bar-mode -1)
 (set-language-environment "UTF-8")
 (setq custom-file "~/.emacs.d/.custom.el")
 (load custom-file)
 
-;; Theming
+;; ~~ Fall Back Theme ~~
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'sourcerer t)
 
+
+;; ~~ Os Specific ~~
 (defmacro with-system (type &rest body)
-  (declare (indent defun))
-  `(when (eq system-type ',type)
-     ,@body))
+	"Trivial macros that define which
+	os is running. Use to parse os conf"
+	(declare (indent defun))
+	`(when (eq system-type ',type)
+		 ,@body))
 
 ;; Switch between systems
 (with-system "darwin"
@@ -52,7 +58,6 @@
 		(set-face-font 'default "Monaco-12")
 		(set-face-font 'variable-pitch "Monaco-12")
 		(set-face-font 'fixed-pitch "Monaco-12")))
-
 (with-system "gnu/linux"
 	(setq ring-bell-function 'ignore)
 	(setq-default line-spacing 2)
@@ -61,18 +66,20 @@
 		(set-face-font 'variable-pitch "Pragmatapro-9")
 		(set-face-font 'fixed-pitch "Pragmatapro-9"))) ; Gentoo thinkpad x220
 
-(global-hl-line-mode 1)
 
+;; ~~ Where we are ~~
+(global-hl-line-mode 1)
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
-
+;; ~~ Graphical mode spec ~~
 (when (display-graphic-p)
 	(tool-bar-mode -1)
 	(scroll-bar-mode -1))
 (set-face-attribute 'vertical-border nil :foreground (face-attribute 'fringe :background))
 
+;; ~~ Pretty useless uhu ?? ~~
 (setq initial-scratch-message ";;_
 ;;                 __         _,******
 ;;   ,-----,        _  _,**
@@ -86,18 +93,18 @@
 ;;                 ''     ''
 ")
 
-;; scrolling
+;; ~~ Scrollings sucks, fix it ~~
 (setq scroll-step            1
 			scroll-conservatively  10000)
 
-;; line num
+;; ~~ Line Num, with steroids. ~~
 (require 'linum)
 (set-face-attribute 'linum nil
-       :background (face-attribute 'default :background)
-       :foreground (face-attribute 'font-lock-comment-face :foreground))
+										:background (face-attribute 'default :background)
+										:foreground (face-attribute 'font-lock-comment-face :foreground))
 (defface linum-current-line-face
 	`((t :background "black"
-	     :foreground "white"))
+			 :foreground "white"))
 	"Face for the currently active Line number")
 (defvar my-linum-current-line-number 0)
 (defun get-linum-format-string ()
@@ -118,51 +125,24 @@
 (ad-activate 'linum-update)
 (global-linum-mode)
 
-;; Powerline
-(setq-default mode-line-format
-							(quote
-							 (" "
-								;; mode string
-								(:propertize global-mode-string face 'mode-line-mode-string)
-
-								;; file path
-								(:propertize (:eval (if (> (length default-directory) 17)
-																				(concat "..." (substring default-directory -20))
-																			default-directory))
-														 face 'mode-line-folder-face)
-
-								;; file name
-								(:propertize mode-line-buffer-identification face 'mode-line-buffer-name)
-								(:propertize mode-line-modified face 'mode-line-modified-face)
-								"  "
-								;; value of 'mode-name'
-								(:propertize "%m" face 'mode-line-mode-name)
-								" :: "
-								;; line #
-								"line %l, %p")))
-
-;; Closes that parenthese
+;; ~~ Should be illegal for lispers ~~
 (electric-pair-mode 1)
 
-;; reboot
-
-(defun reboot-init ()
-	(load-file "~/.emacs.d/init.el"))
-
-;; make it short
+;; ~~ For the lazy ~~
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; ~~ Theme Dispatcher ~~
+(with-system darwin ;; Imac 
+	(if (display-graphic-p)
+			(progn
+				(load-theme 'erosion t))
+		(load-theme 'sourcerer t)))
+(with-system gnu/linux ;; Thinkpad x200 Gentoo.
+	(if (display-graphic-p)
+			(progn
+				(load-theme 'erosion t))
+		(load-theme 'sourcerer t)))
 
-;; Balance that theme
-(with-system darwin
-	(if (display-graphic-p)
-			(progn
-				(load-theme 'erosion t))
-		(load-theme 'sourcerer t)))
-(with-system gnu/linux
-	(if (display-graphic-p)
-			(progn
-				(load-theme 'erosion t))
-		(load-theme 'sourcerer t)))
+(setq lambda-symbol "λ")
 
 (provide 'conf-emacs)
