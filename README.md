@@ -19,5 +19,5 @@ git clone https://github.com/iomonad/iomonad.el ~/.emacs.d
 * Support snippets, completion and more ...
 <br>
 <p align="center">
-  <img src="http://home.thep.lu.se/~karlf/bitches-dont-know-emacs.jpg"/>
+  <img src="https://u.teknik.io/yXjrP.png"/>
 </p> 
