@@ -152,9 +152,16 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 
+;; Balance that theme
 (with-system darwin
-	(load-theme 'erosion t))
+	(if (display-graphic-p)
+			(progn
+				(load-theme 'erosion t))
+		(load-theme 'sourcerer t)))
 (with-system gnu/linux
-	(load-theme 'erosion t))
+	(if (display-graphic-p)
+			(progn
+				(load-theme 'erosion t))
+		(load-theme 'sourcerer t)))
 
 (provide 'conf-emacs)
