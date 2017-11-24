@@ -54,7 +54,7 @@
 (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
 (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-insert-state-map (kbd "C-k") 'kill-line)
-(define-key evil-normal-state-map (kbd "C-k") 'kll-line)
+(define-key evil-normal-state-map (kbd "C-k") 'kill-line)
 (define-key evil-normal-state-map (kbd "C-n") 'next-line)
 (define-key evil-normal-state-map (kbd "C-p") 'previous-line)
 (define-key evil-insert-state-map (kbd "C-n") 'next-line)

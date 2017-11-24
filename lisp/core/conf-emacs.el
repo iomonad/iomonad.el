@@ -1,4 +1,4 @@
-;; File: conf-emacs.el
+;; FiLe: conf-emacs.el
 ;; Author: iomonad me@trosa.io
 
 ;; ~~ Global Block ~~
@@ -142,6 +142,13 @@
 			(progn
 				(load-theme 'erosion t))
 		(load-theme 'sourcerer t)))
+
+;; ~~ Split bars ~~
+(set-face-background 'vertical-border "black")
+(set-face-foreground 'vertical-border (face-background 'vertical-border))
+
+(custom-set-faces
+ '(mode-line-inactive ((t (:background nil)))))
 
 (setq lambda-symbol "λ")
 
