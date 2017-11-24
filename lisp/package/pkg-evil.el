@@ -66,4 +66,23 @@
 (define-key evil-insert-state-map (kbd "C-w") 'copy)
 (define-key evil-insert-state-map (kbd "C-y") 'yank)
 
+;; wrap selection
+(define-key evil-visual-state-map (kbd "(")  'insert-pair)
+(define-key evil-visual-state-map (kbd "[")  'insert-pair)
+(define-key evil-visual-state-map (kbd "{")  'insert-pair)
+(define-key evil-visual-state-map (kbd "\"") 'insert-pair)
+(define-key evil-visual-state-map (kbd "\'") 'insert-pair)
+
+;; string-rectangle from visual mode
+(define-key evil-visual-state-map (kbd "r") 'string-rectangle)
+
+;; rebind <Esc> to C-g
+(define-key evil-insert-state-map (kbd "C-g") 'evil-force-normal-state)
+(global-set-key (kbd "C-<up>") 'move-text-up)
+(global-set-key (kbd "C-<down>") 'move-text-down)
+
+(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-]") 'forward-paragraph)
+(global-set-key (kbd "M-/") 'replace-under-cursor)
+
 (provide 'pkg-evil)

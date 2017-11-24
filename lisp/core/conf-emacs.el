@@ -61,6 +61,7 @@
 		(set-face-font 'variable-pitch "Pragmatapro-9")
 		(set-face-font 'fixed-pitch "Pragmatapro-9"))) ; Gentoo thinkpad x220
 
+(global-hl-line-mode 1)
 
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
