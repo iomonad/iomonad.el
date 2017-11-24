@@ -39,23 +39,27 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'sourcerer t)
 
+(defmacro with-system (type &rest body)
+  (declare (indent defun))
+  `(when (eq system-type ',type)
+     ,@body))
+
 ;; Switch between systems
-(if (eq system-type "darwin")
-		(display-time-mode t)
+(with-system "darwin"
+	(display-time-mode t)
 	(when window-system
 		(setq-default line-spacing 2)
 		(set-face-font 'default "Monaco-12")
 		(set-face-font 'variable-pitch "Monaco-12")
 		(set-face-font 'fixed-pitch "Monaco-12")))
 
-(if (eq system-type "gnu/linux")
-		(setq ring-bell-function 'ignore)
+(with-system "gnu/linux"
+	(setq ring-bell-function 'ignore)
 	(setq-default line-spacing 2)
 	(when window-system
-		(load-theme 'erosion t))
 		(set-face-font 'default "Pragmatapro-9")
 		(set-face-font 'variable-pitch "Pragmatapro-9")
-		(set-face-font 'fixed-pitch "Pragmatapro-9")) ; Gentoo thinkpad x220
+		(set-face-font 'fixed-pitch "Pragmatapro-9"))) ; Gentoo thinkpad x220
 
 
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -144,17 +148,13 @@
 (defun reboot-init ()
 	(load-file "~/.emacs.d/init.el"))
 
-																				;(setq user-init-file (or load-file-name (buffer-file-name)))
-																				;(setq user-emacs-directory (file-name-directory user-init-file))
-
 ;; make it short
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; Fold wrappers
-																				;(require 'folding)
-																				;(folding-add-to-marks-list 'c-mode "/*{{{" "}}}*/" nil t)
-																				;(folding-add-to-marks-list 'cc-mode "/*{{{" "}}}*/" nil t)
-																				;(folding-add-to-marks-list 'perl-mode "/*{{{" "}}}*/" nil t)
-																				;(folding-add-to-marks-list 'python-mode "#{{{" "#}}}" nil t)
+
+(with-system darwin
+	(load-theme 'erosion t))
+(with-system gnu/linux
+	(load-theme 'erosion t))
 
 (provide 'conf-emacs)
