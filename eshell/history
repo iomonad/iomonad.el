@@ -1,0 +1,29 @@
+vim
+top
+cc get_next_line.c 
+rm -rf LINGI2241-Project1/
+rm -rf feelit/
+eshell-debug 
+brew
+pwd
+cd
+pwd
+clear
+clear
+pwd
+lsd
+c
+l
+pwd
+ls
+pwd
+ls
+clear
+sudo su
+ls
+pwd
+ls
+scala
+exit
+ls
+vim
