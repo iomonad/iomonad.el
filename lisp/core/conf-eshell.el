@@ -1,8 +1,5 @@
 ;; Eshell configuration
 
-(require 'dash)
-(require 's)
-
 ;; ~~ Core configuration ~~
 (use-package eshell
   :init
