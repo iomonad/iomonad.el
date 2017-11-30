@@ -31,6 +31,11 @@
       auto-save-list-file-prefix nil
       auto-save-default nil)
 
+;; ~~ doom ~~
+(setq debug-on-error nil)
+(setq debug-on-quit nil)
+(setq debug-on-message nil)
+
 ;; ~~ Debloat init ~~
 (menu-bar-mode -1)
 (set-language-environment "UTF-8")
