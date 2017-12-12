@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 EDIR=~/.emacs.d
 BASE=https://github.com/iomonad/iomonad.el.git
