@@ -145,9 +145,9 @@
 (with-system gnu/linux ;; Thinkpad x200 Gentoo.
   (if (display-graphic-p)
       (progn
-        (set-face-font 'default "Pragmatapro-9")
-        (set-face-font 'variable-pitch "Pragmatapro-9")
-        (set-face-font 'fixed-pitch "Pragmatapro-9") ; Gentoo thinkpad x220
+  ;      (set-face-font 'default "Pragmatapro-9")   ;; Stallman approve this
+  ;      (set-face-font 'variable-pitch "Pragmatapro-9")
+  ;      (set-face-font 'fixed-pitch "Pragmatapro-9") ; Gentoo thinkpad x220
         (load-theme 'erosion t))
     (load-theme 'sourcerer t)))
 
