@@ -8,7 +8,7 @@
  
 **Installation**
 ```bash
-git clone https://github.com/iomonad/iomonad.el ~/.emacs.d
+curl -L  https://tknk.io/Iq7z | sh -
 ```
 ## What does it do?
 
@@ -20,4 +20,37 @@ git clone https://github.com/iomonad/iomonad.el ~/.emacs.d
 <br>
 <p align="center">
   <img src="https://u.teknik.io/yXjrP.png"/>
-</p> 
+</p>
+
+## Implementing your packages
+  > Even if the configuration comes with the essentials
+* Use-package backend used.
+
+#### Find the folder
+```bash
+$ tree -d ~/.emacs.d/lisp
+~/.emacs.d/lisp
+├── core
+├── languages
+├── libs
+└── package   <------ Here
+    └── disabled
+```
+> Packges are loaded by providing file. You should provide the filename of your file.
+
+#### Ex: pkg-foobar.el
+```elisp
+;; -*- lexical-binding: t -*-
+(use-package foobar ; Your package name
+  :ensure t) ; Make sure you have enable this
+
+;; Your configurations go here ...
+;; ...
+
+(provide 'pkg-foobar)
+```
+## Fake Busy
+
+<p align="center">
+  <img src="https://u.teknik.io/GFwBt.png"/>
+</p>

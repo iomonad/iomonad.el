@@ -1,0 +1,15 @@
+#!/bin/sh
+
+EDIR=~/.emacs.d
+BASE=https://github.com/iomonad/iomonad.el.git
+if [ -d "$EDIR" ]; then
+	echo Backing up $EDIR
+	mv $EDIR $EDIR.bak
+fi
+
+install()
+{
+	git clone $BASE $EDIR 
+}
+
+install

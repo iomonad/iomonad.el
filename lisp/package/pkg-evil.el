@@ -59,11 +59,14 @@
 (define-key evil-normal-state-map (kbd "C-p") 'previous-line)
 (define-key evil-insert-state-map (kbd "C-n") 'next-line)
 (define-key evil-insert-state-map (kbd "C-p") 'previous-line)
+(define-key evil-insert-state-map (kbd "C-t") 'transpose-chars)
+(define-key evil-normal-state-map (kbd "C-t") 'transpose-chars)
 
 (define-key evil-normal-state-map (kbd "C-w") 'copy)
 (define-key evil-normal-state-map (kbd "C-y") 'yank)
 (define-key evil-insert-state-map (kbd "C-w") 'copy)
 (define-key evil-insert-state-map (kbd "C-y") 'yank)
+(define-key evil-insert-state-map (kbd "C-t") 'transpose-chars)
 
 ;; ~~ wrap selection ~~
 (define-key evil-visual-state-map (kbd "(")  'insert-pair)
