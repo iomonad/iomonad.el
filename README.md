@@ -1,4 +1,4 @@
-# iomonad.el
+# iomonad.el [![HitCount](http://hits.dwyl.io/iomonad/iomonad.el.svg)](http://hits.dwyl.io/iomonad/iomonad.el)
 
 <a href="https://github.com/iomonad/iomonad.el"><img
   src="https://www.gnu.org/software/emacs/images/emacs.png" alt="Normalize Logo"
